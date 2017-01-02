@@ -1,0 +1,94 @@
+.tabs {
+    width:100%;
+    display:inline-block;
+}
+ 
+    /*----- Tab Links -----*/
+    /* Clearfix */
+    .tab-links{
+        margin-bottom: 0px !important;
+    }
+    .tab-links:after {
+        display:block;
+        clear:both;
+        content:'';
+    }
+ 
+    .tab-links li {
+        margin:0px 5px;
+        border:1px solid #A9A9A9;
+        border-radius:5px 5px 0px 0px;
+        float:left;
+        list-style:none;
+    }
+ 
+        .tab-links a {
+            padding:9px 15px;
+            display:inline-block;
+            text-decoration:none;
+            border-radius:5px 5px 0px 0px;
+            background:#0f0fbd;
+            font-size:15px;
+            font-weight:600;
+            color:#fff;
+            transition:all linear 0.15s;
+        }
+ 
+        .tab-links a:hover {
+            background:#fff;
+            color:#0f0fbd !important;
+            text-decoration:none;
+        }
+        .active a:hover {
+            background:#0f0fbd !important;
+            color:#fff !important;
+        }
+    li.active a, li.active a:hover {
+        background:#0f0fbd;
+        color:#fff !important;
+        text-decoration:underline;
+    }
+ 
+    /*----- Content of Tabs -----*/
+    .tab-content {
+        border-radius:5px;
+        max-width: 400px;
+        box-shadow:-1px 1px 1px rgba(0,0,0,0.15);
+        background:#fff;
+    }
+    .tab-content li{
+        list-style: none;
+    }
+ 
+        .tab {
+            display:none;
+            margin:0px;
+        }
+ 
+        .tab.active {
+            display:block;
+        }
+        .tab.active ul,
+        .tab ul{
+            margin-bottom: 0;
+            margin-top: 0;
+            padding: 0;
+        }
+        .tab.active li,
+        .tab li{
+            padding: 8px;
+            border:1px solid #A9A9A9;
+            background-color: #0f0fbd;
+            color: #fff; 
+        }
+        .tab.active li a,
+        .tab li a{
+            color:#fff;
+            text-decoration:none;
+            font-size: 14px;
+        }
+        .tab.active li a:hover,
+        .tab li a:hover{
+            text-decoration: underline;
+        }
+        

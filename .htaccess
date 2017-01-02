@@ -1,0 +1,23 @@
+
+RewriteEngine on
+
+# Stop hotlinking.
+RewriteCond %{HTTP_REFERER} !^$
+RewriteCond %{HTTP_REFERER} ^https?://([^/]+)/ [NC]
+RewriteCond %1#%{HTTP_HOST} !^(.+)#\1$
+RewriteRule \.(jpg|jpeg|png|gif|swf|svg)$ - [NC,F,L]
+
+# Custom error pages.
+ErrorDocument 401 C:\wamp\www\OOP php\PROVERA VESTI\401.shtml
+ErrorDocument 403 C:\wamp\www\OOP php\PROVERA VESTI\403.shtml
+ErrorDocument 404 C:\wamp\www\OOP php\PROVERA VESTI\404.html
+ErrorDocument 500 C:\wamp\www\OOP php\PROVERA VESTI\500.shtml
+
+# Prevent viewing of htaccess file.
+<Files .htaccess>
+    order allow,deny
+    deny from all
+</Files>
+
+# Prevent directory listings
+Options All -Indexes
