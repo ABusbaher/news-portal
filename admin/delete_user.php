@@ -9,7 +9,7 @@ if(isset($_GET['id'])){
     $id = (int)$_GET['id'];
     if(!empty($id)){
         User::remove($id);
-        echo header('Location: users.php');
+        header('Location: users.php');
     }
 }
 include_once "inc/footer.php";

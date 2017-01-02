@@ -9,7 +9,7 @@ if(isset($_GET['id'])){
     $id = (int)$_GET['id'];
     if(!empty($id)){
         Comment::delete($id);
-        echo header('Location: main.php');
+        header('Location: main.php');
     }
 }
 include_once "inc/footer.php";

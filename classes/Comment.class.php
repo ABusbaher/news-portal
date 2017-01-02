@@ -11,13 +11,4 @@ class Comment extends Entity{
     public static $greska = 'Neuspešno postavljanje komentara';
     public static $msg1 = 'Error in deleting comment!';
     public static $msg2 = 'Comment successfully deleted';
-	/*
-	public function render(){
-		echo "<h3>ID: " . $this->comment_id . "</h3>";
-		echo "<h3>User_id: " . $this->user_id . "</h3>";
-		echo "<h3>Article_id: " . $this->article_id . "</h3>";
-		echo "<h3>Content: " . $this->content . "</h3>";
-		echo "<h3>Time: " . $this->time . "</h3>";
-	}
-	*/
 }

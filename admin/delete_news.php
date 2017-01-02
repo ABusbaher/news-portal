@@ -14,7 +14,7 @@ if(isset($_GET['id'])){
         $image_path = $path . $image_name;
         Article::remove($id);
         unlink($image_path);
-        echo header('Location: main.php');
+        header('Location: main.php');
     }
 }
 include_once "inc/footer.php";

@@ -9,7 +9,7 @@ if(isset($_GET['id'])){
     $id = (int)$_GET['id'];
     if(!empty($id)){
         Comment::remove($id);
-        echo header('Location: admin_comments.php');
+        header('Location: admin_comments.php');
     }
 }
 include_once "inc/footer.php";

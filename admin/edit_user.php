@@ -12,7 +12,7 @@ if(isset($_GET['id'])){
         $user1->user_id = $id;
         $user1->status = "2";
         echo $user1->update();
-        echo header("Location:users.php?uspeh");
+        header("Location:users.php?uspeh");
     }
 }
 include_once "inc/footer.php";

@@ -9,12 +9,4 @@ class Article extends Entity{
     public static $msg1 ="News not deleted! Did you first delete all comments for that news?";
     public static $msg2 ="The news successfully deleted";
     public static $greska = "<h4 class='error'>Unexpected error!</h4>";
-	/*
-	public function render(){
-		echo '<div class="block">';
-            echo '<h1>' . $this->title . '</h1>';
-            echo '<img src="slike/' . $this->thumbnail . '" alt="" class="desno">';
-            echo '<p class="intro-text">' . $this->content . '<a href="#">Read&nbsp;more...</a>  </p>';
-        echo '</div>';
-	}*/
 }

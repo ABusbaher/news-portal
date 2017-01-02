@@ -40,7 +40,7 @@ $vesti = Article::getAll_by_id($id,$limit = 4,$offset);
         }
         
       }else{
-        header('Location: 404.php');
+        header('Location: 404.html');
       }
 ?>
     <div class="row">

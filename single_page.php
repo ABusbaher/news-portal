@@ -35,7 +35,7 @@ include_once "inc/nav.php";
   </div>
   <?php
   }else{
-      header('Location: 404.php');
+      header('Location: 404.html');
   }
   ?>
   </div>
